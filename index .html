@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Belated Birthday, Nishmitha 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ===== CSS VARIABLES ===== */
+  :root {
+    --pink: #f4a7b9;
+    --rose: #e8667a;
+    --lavender: #c9b8e8;
+    --peach: #ffd4b8;
+    --gold: #e8c4a0;
+    --cream: #fff8f4;
+    --deep-rose: #c0445a;
+    --blush: #fce4ec;
+    --mist: rgba(255,255,255,0.12);
+    --glass: rgba(255,240,245,0.18);
+    --glass-border: rgba(255,200,215,0.35);
+    --shadow-glow: 0 8px 60px rgba(232,102,122,0.25);
+    --transition: cubic-bezier(0.4,0,0.2,1);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background: #0d0608;
+    color: #fff;
+    overflow-x: hidden;
+    cursor: default;
+  }
+
+  /* ===== PAGES ===== */
+  .page {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* ===== PAGE 1 — LANDING ===== */
+  #page1 {
+    background: radial-gradient(ellipse at 20% 50%, #2a0a14 0%, #150308 40%, #0d0608 100%);
+  }
+
+  .p1-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(200,80,110,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 10% 80%, rgba(180,120,200,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 80% 50% at 50% 50%, rgba(140,40,70,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-card {
+    position: relative;
+    z-index: 10;
+    background: var(--glass);
+    backdrop-filter: blur(24px) saturate(1.5);
+    -webkit-backdrop-filter: blur(24px) saturate(1.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 32px;
+    padding: clamp(40px, 6vw, 80px) clamp(30px, 5vw, 80px);
+    max-width: min(700px, 92vw);
+    text-align: center;
+    box-shadow: var(--shadow-glow), 0 2px 0 rgba(255,220,230,0.2) inset;
+    animation: heroReveal 1.6s var(--transition) forwards;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  @keyframes heroReveal {
+    to { opacity:1; transform:translateY(0); }
+  }
+
+  .hero-eyebrow {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(11px, 1.5vw, 13px);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--pink);
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 300;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #ffd4d4 0%, #f4a7b9 40%, #e8c4f0 80%, #ffd4b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 18px;
+    animation: shimmerText 4s ease-in-out infinite;
+    background-size: 200% auto;
+  }
+
+  @keyframes shimmerText {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+  }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(16px, 2.2vw, 22px);
+    color: rgba(255,220,230,0.75);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .hero-intro {
+    font-size: clamp(13px, 1.6vw, 15px);
+    color: rgba(255,210,220,0.6);
+    line-height: 1.9;
+    margin-bottom: 44px;
+    font-weight: 300;
+  }
+
+  .celebrate-btn {
+    position: relative;
+    display: inline-block;
+    padding: 18px 56px;
+    background: linear-gradient(135deg, #e8667a 0%, #c9547a 50%, #a0446a 100%);
+    border: none;
+    border-radius: 60px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 40px rgba(232,102,122,0.5), 0 0 0 0 rgba(232,102,122,0.4);
+    transition: all 0.4s var(--transition);
+    overflow: hidden;
+    animation: btnPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes btnPulse {
+    0%, 100% { box-shadow: 0 4px 40px rgba(232,102,122,0.5), 0 0 0 0 rgba(232,102,122,0.3); }
+    50% { box-shadow: 0 4px 60px rgba(232,102,122,0.7), 0 0 0 16px rgba(232,102,122,0); }
+  }
+
+  .celebrate-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 60px rgba(232,102,122,0.7);
+  }
+
+  .celebrate-btn::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+    border-radius: inherit;
+  }
+
+  /* ===== FLOATING PARTICLES CANVAS ===== */
+  #particleCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  /* ===== FIREWORKS CANVAS ===== */
+  #fxCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 100;
+  }
+
+  /* ===== NAV DOTS ===== */
+  .nav-dots {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: rgba(255,180,200,0.3);
+    border: 1px solid rgba(255,180,200,0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .nav-dot.active {
+    background: var(--pink);
+    box-shadow: 0 0 12px var(--pink);
+    transform: scale(1.3);
+  }
+
+  /* ===== PAGE TRANSITIONS ===== */
+  .page-transition {
+    position: fixed; inset: 0;
+    background: radial-gradient(ellipse at center, #e8667a, #0d0608);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s var(--transition);
+  }
+
+  .page-transition.active { opacity: 1; pointer-events: all; }
+
+  /* ===== PAGE 2 — GALLERY ===== */
+  #page2 {
+    background: radial-gradient(ellipse at 30% 30%, #1a0510 0%, #0d0608 60%);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 300;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd4d4, #f4a7b9, #e8c4f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    padding-top: 32px;
+    position: relative;
+    z-index: 20;
+  }
+
+  .section-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(13px, 1.8vw, 17px);
+    color: rgba(255,200,215,0.5);
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 20;
+  }
+
+  /* Floating stage — fills entire viewport */
+  .float-stage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Each floating card is absolutely placed, JS moves it */
+  .img-card {
+    position: absolute;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    box-shadow: 0 6px 40px rgba(200,80,110,0.18), 0 1px 0 rgba(255,220,230,0.15) inset;
+    will-change: transform;
+    transition: box-shadow 0.35s, border-color 0.35s;
+    /* Width/height set by JS */
+  }
+
+  .img-card:hover {
+    box-shadow: 0 16px 70px rgba(232,102,122,0.5);
+    border-color: rgba(255,160,190,0.6);
+    z-index: 50 !important;
+  }
+
+  .img-card.active {
+    border-color: var(--pink) !important;
+    box-shadow: 0 0 0 2px var(--pink), 0 16px 80px rgba(232,102,122,0.65) !important;
+  }
+
+  .img-card img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s var(--transition);
+    pointer-events: none;
+  }
+
+  .img-card:hover img { transform: scale(1.07); }
+
+  .img-card-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(100,20,40,0.75) 0%, transparent 55%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+    pointer-events: none;
+  }
+
+  .img-card:hover .img-card-overlay { opacity: 1; }
+
+  .img-card-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(255,220,230,0.9);
+    pointer-events: none;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed; inset: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10,3,6,0.92);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  }
+
+  .lightbox.open { opacity: 1; pointer-events: all; }
+
+  .lightbox-inner {
+    position: relative;
+    max-width: min(700px, 92vw);
+    max-height: 85vh;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 0 100px rgba(232,102,122,0.4);
+    animation: lbFloat 4s ease-in-out infinite;
+  }
+
+  @keyframes lbFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .lightbox-inner img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    object-fit: contain;
+  }
+
+  .lightbox-glow {
+    position: absolute; inset: -3px;
+    border-radius: 27px;
+    background: linear-gradient(135deg, var(--pink), var(--lavender), var(--peach));
+    z-index: -1;
+    animation: glowRotate 3s linear infinite;
+  }
+
+  @keyframes glowRotate {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s;
+    z-index: 10;
+  }
+
+  .lightbox-close:hover { background: rgba(232,102,122,0.5); transform: scale(1.1); }
+
+  .lightbox-back {
+    position: absolute;
+    top: 16px; left: 16px;
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s;
+    z-index: 10;
+    letter-spacing: 0.05em;
+  }
+
+  .lightbox-back:hover { background: rgba(232,102,122,0.4); transform: translateX(-3px); }
+
+  /* Now playing */
+  .now-playing {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 60px;
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 300;
+    font-size: 13px;
+    color: rgba(255,210,220,0.9);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateX(-50%) translateY(20px);
+    white-space: nowrap;
+  }
+
+  .now-playing.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .now-playing-dot {
+    width: 8px; height: 8px;
+    background: var(--pink);
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.6; }
+  }
+
+  /* ===== PAGE 3 — VIDEOS ===== */
+  #page3 {
+    background: radial-gradient(ellipse at 70% 70%, #0e0515 0%, #0d0608 60%);
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Reuse float-stage for video page */
+  .video-card {
+    position: absolute;
+    border-radius: 22px;
+    overflow: hidden;
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(180,120,220,0.3);
+    cursor: pointer;
+    box-shadow: 0 6px 40px rgba(160,80,200,0.2), 0 1px 0 rgba(220,180,255,0.1) inset;
+    will-change: transform;
+    transition: box-shadow 0.35s, border-color 0.35s;
+  }
+
+  .video-card:hover {
+    box-shadow: 0 20px 80px rgba(180,100,230,0.45);
+    border-color: rgba(200,140,255,0.6);
+    z-index: 50 !important;
+  }
+
+  .video-card video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+
+  .video-play-overlay {
+    position: absolute; inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20,5,25,0.45);
+    transition: background 0.3s;
+    pointer-events: none;
+  }
+
+  .video-card:hover .video-play-overlay { background: rgba(20,5,25,0.15); }
+
+  .play-btn {
+    width: 60px; height: 60px;
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(220,180,255,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.3s;
+    box-shadow: 0 0 30px rgba(200,120,240,0.35);
+  }
+
+  .video-card:hover .play-btn {
+    transform: scale(1.15);
+    background: rgba(180,100,230,0.3);
+    box-shadow: 0 0 50px rgba(200,120,240,0.65);
+  }
+
+  .video-label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 14px 14px;
+    background: linear-gradient(to top, rgba(60,10,50,0.9), transparent);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(240,210,255,0.9);
+    pointer-events: none;
+  }
+
+  /* Video lightbox */
+  .video-lightbox {
+    position: fixed; inset: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5,1,8,0.95);
+    backdrop-filter: blur(24px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+  }
+
+  .video-lightbox.open { opacity: 1; pointer-events: all; }
+
+  .video-lightbox-inner {
+    position: relative;
+    max-width: min(900px, 94vw);
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 0 120px rgba(180,100,220,0.3), 0 0 60px rgba(232,102,122,0.2);
+  }
+
+  .video-lightbox-inner video {
+    width: 100%;
+    display: block;
+    max-height: 80vh;
+    object-fit: contain;
+    background: #000;
+  }
+
+  /* ===== PAGE 4 — GOODBYE ===== */
+  #page4 {
+    background: radial-gradient(ellipse at 50% 50%, #120410 0%, #080308 100%);
+  }
+
+  .goodbye-card {
+    position: relative;
+    z-index: 10;
+    max-width: min(680px, 92vw);
+    text-align: center;
+    padding: clamp(50px, 7vw, 90px) clamp(30px, 5vw, 70px);
+    background: var(--glass);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(220,160,200,0.2);
+    border-radius: 36px;
+    box-shadow: 0 8px 80px rgba(180,80,130,0.2);
+    animation: goodbyeReveal 1.2s var(--transition) forwards;
+  }
+
+  @keyframes goodbyeReveal {
+    from { opacity:0; transform:translateY(30px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+
+  .goodbye-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(26px, 4vw, 44px);
+    font-weight: 300;
+    line-height: 1.25;
+    background: linear-gradient(135deg, #ffe0e8, #d4a8e8, #ffd4b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 36px;
+  }
+
+  .goodbye-divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--pink), transparent);
+    margin: 0 auto 36px;
+  }
+
+  .goodbye-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(15px, 2vw, 19px);
+    line-height: 2.2;
+    color: rgba(255,210,225,0.75);
+    font-weight: 300;
+  }
+
+  .goodbye-text em {
+    color: rgba(255,190,210,0.95);
+    font-style: normal;
+  }
+
+  .star-field {
+    position: absolute; inset: 0;
+    pointer-events: none;
+  }
+
+  .star {
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    animation: twinkle var(--dur, 3s) ease-in-out infinite;
+    animation-delay: var(--del, 0s);
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: var(--minop, 0.1); transform: scale(1); }
+    50% { opacity: var(--maxop, 0.8); transform: scale(1.3); }
+  }
+
+  /* ===== SCROLL HINT ===== */
+  .scroll-hint {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.5;
+    animation: scrollBob 2s ease-in-out infinite;
+    cursor: pointer;
+  }
+
+  .scroll-hint span {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--pink);
+  }
+
+  .scroll-arrow {
+    width: 20px; height: 20px;
+    border-right: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
+    transform: rotate(45deg);
+  }
+
+  @keyframes scrollBob {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* ===== AMBIENT ORBS ===== */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    animation: orbFloat var(--dur, 12s) ease-in-out infinite;
+    animation-delay: var(--del, 0s);
+  }
+
+  @keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -40px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.95); }
+  }
+
+  /* ===== FLOATING PETAL ===== */
+  .petal-static {
+    position: absolute;
+    pointer-events: none;
+    animation: petalDrift var(--dur, 12s) linear infinite;
+    animation-delay: var(--del, 0s);
+    opacity: 0;
+    font-size: var(--size, 18px);
+  }
+
+  @keyframes petalDrift {
+    0% { transform: translateY(-20px) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.4; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .video-grid { grid-template-columns: 1fr; }
+    .nav-dots { right: 10px; }
+  }
+
+  /* ===== SECTION NAV BTNS ===== */
+  .page-nav-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    z-index: 30;
+    padding: 12px 32px;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 40px;
+    color: rgba(255,200,215,0.9);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.05em;
+  }
+
+  .page-nav-btn:hover {
+    background: rgba(232,102,122,0.25);
+    box-shadow: 0 4px 30px rgba(232,102,122,0.3);
+    transform: translateY(-2px);
+  }
+
+  /* ===== AUDIO PLAYER ===== */
+  audio { display: none; }
+</style>
+</head>
+<body>
+
+<!-- Canvases -->
+<canvas id="particleCanvas"></canvas>
+<canvas id="fxCanvas"></canvas>
+
+<!-- Page Transition Overlay -->
+<div class="page-transition" id="pageTransition"></div>
+
+<!-- Now Playing -->
+<div class="now-playing" id="nowPlaying">
+  <div class="now-playing-dot"></div>
+  <span id="nowPlayingText">♫ Playing...</span>
+</div>
+
+<!-- Nav Dots -->
+<nav class="nav-dots" id="navDots">
+  <div class="nav-dot active" onclick="goToPage(1)" title="Welcome"></div>
+  <div class="nav-dot" onclick="goToPage(2)" title="Memories"></div>
+  <div class="nav-dot" onclick="goToPage(3)" title="Videos"></div>
+  <div class="nav-dot" onclick="goToPage(4)" title="Farewell"></div>
+</nav>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-glow"></div>
+  <div class="lightbox-inner" id="lightboxInner">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-back" id="lightboxBack">← Back</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+</div>
+
+<!-- Video Lightbox -->
+<div class="video-lightbox" id="videoLightbox">
+  <div class="video-lightbox-inner">
+    <button class="lightbox-close" id="videoLightboxClose">✕</button>
+    <button class="lightbox-back" id="videoLightboxBack">← Back</button>
+    <video id="videoLightboxPlayer" controls playsinline></video>
+  </div>
+</div>
+
+<!-- Audio Elements -->
+<audio id="tune1" src="tune.mp3" preload="none"></audio>
+<audio id="song1" src="song1.mp3" preload="none"></audio>
+<audio id="song2" src="song2.mp3" preload="none"></audio>
+<audio id="song3" src="song3.mp3" preload="none"></audio>
+<audio id="song4" src="song4.mp3" preload="none"></audio>
+<audio id="song5" src="song5.mp3" preload="none"></audio>
+
+<!-- ==================== PAGE 1 ==================== -->
+<section class="page" id="page1">
+  <div class="p1-bg"></div>
+
+  <!-- Ambient orbs -->
+  <div class="orb" style="width:400px;height:400px;background:rgba(200,80,110,0.12);top:-100px;left:-100px;--dur:14s;"></div>
+  <div class="orb" style="width:300px;height:300px;background:rgba(180,120,200,0.1);bottom:-80px;right:-60px;--dur:10s;--del:-4s;"></div>
+  <div class="orb" style="width:200px;height:200px;background:rgba(255,180,140,0.08);bottom:100px;left:10%;--dur:16s;--del:-7s;"></div>
+
+  <!-- Drifting petals -->
+  <div class="petal-static" style="left:5%;--dur:14s;--del:0s;--size:22px;">🌸</div>
+  <div class="petal-static" style="left:15%;--dur:18s;--del:-5s;--size:16px;">🌷</div>
+  <div class="petal-static" style="left:30%;--dur:12s;--del:-2s;--size:14px;">✿</div>
+  <div class="petal-static" style="left:55%;--dur:20s;--del:-8s;--size:18px;">🌸</div>
+  <div class="petal-static" style="left:70%;--dur:15s;--del:-3s;--size:12px;">🌷</div>
+  <div class="petal-static" style="left:85%;--dur:17s;--del:-11s;--size:20px;">🌸</div>
+  <div class="petal-static" style="left:92%;--dur:13s;--del:-6s;--size:15px;">✿</div>
+
+  <div class="hero-card">
+    <div class="hero-eyebrow">✦ A Belated Celebration ✦</div>
+    <h1 class="hero-title">Belated Happy Birthday,<br>Nishmitha 💖</h1>
+    <p class="hero-sub">"Time may have passed… but some people are never forgotten."</p>
+    <p class="hero-intro">
+      Some birthdays slip by quietly, yet the warmth they carry lingers long after.<br>
+      This small tribute is for you — a gentle, heartfelt reminder<br>
+      that your presence has left a beautiful mark that time cannot erase.
+    </p>
+    <button class="celebrate-btn" id="celebrateBtn" onclick="celebrate()">
+      🌸 Celebrate 🌸
+    </button>
+  </div>
+
+  <div class="scroll-hint" onclick="goToPage(2)">
+    <span>Explore Memories</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ==================== PAGE 2 ==================== -->
+<section class="page" id="page2" style="display:none;">
+  <div class="orb" style="width:500px;height:500px;background:rgba(200,80,120,0.1);top:-150px;right:-150px;--dur:16s;"></div>
+  <div class="orb" style="width:350px;height:350px;background:rgba(160,100,200,0.08);bottom:-100px;left:-80px;--dur:12s;--del:-5s;"></div>
+
+  <div class="petal-static" style="left:8%;--dur:16s;--del:-1s;">🌸</div>
+  <div class="petal-static" style="left:25%;--dur:14s;--del:-7s;">🌷</div>
+  <div class="petal-static" style="left:60%;--dur:18s;--del:-3s;">🌸</div>
+  <div class="petal-static" style="left:80%;--dur:12s;--del:-9s;">✿</div>
+
+  <h2 class="section-title" style="position:relative;z-index:20;">Memory Gallery</h2>
+  <p class="section-sub" style="position:relative;z-index:20;margin-bottom:10px;">Click any memory to relive the moment…</p>
+
+  <!-- Free-floating stage -->
+  <div class="float-stage" id="galleryStage"></div>
+
+  <button class="page-nav-btn" onclick="goToPage(3)">Videos → </button>
+</section>
+
+<!-- ==================== PAGE 3 ==================== -->
+<section class="page" id="page3" style="display:none;">
+  <div class="orb" style="width:400px;height:400px;background:rgba(140,80,200,0.1);top:-100px;left:-100px;--dur:14s;"></div>
+  <div class="orb" style="width:300px;height:300px;background:rgba(200,100,140,0.08);bottom:-80px;right:-60px;--dur:11s;--del:-4s;"></div>
+
+  <div class="petal-static" style="left:12%;--dur:15s;--del:-2s;">🌸</div>
+  <div class="petal-static" style="left:45%;--dur:19s;--del:-8s;">🌷</div>
+  <div class="petal-static" style="left:75%;--dur:13s;--del:-4s;">🌸</div>
+
+  <h2 class="section-title" style="position:relative;z-index:20;">Moments That Still Shine</h2>
+  <p class="section-sub" style="position:relative;z-index:20;margin-bottom:10px;">Some moments are too precious to be forgotten…</p>
+
+  <!-- Free-floating video stage -->
+  <div class="float-stage" id="videoStage"></div>
+
+  <button class="page-nav-btn" onclick="goToPage(4)">A Farewell → </button>
+</section>
+
+<!-- ==================== PAGE 4 ==================== -->
+<section class="page" id="page4" style="display:none;">
+  <div class="star-field" id="starField"></div>
+
+  <div class="orb" style="width:600px;height:600px;background:rgba(160,60,120,0.08);top:50%;left:50%;transform:translate(-50%,-50%);--dur:20s;"></div>
+
+  <div class="petal-static" style="left:5%;--dur:18s;--del:-2s;">🌸</div>
+  <div class="petal-static" style="left:20%;--dur:14s;--del:-6s;">✿</div>
+  <div class="petal-static" style="left:50%;--dur:20s;--del:-10s;">🌸</div>
+  <div class="petal-static" style="left:72%;--dur:16s;--del:-4s;">🌷</div>
+  <div class="petal-static" style="left:90%;--dur:12s;--del:-8s;">🌸</div>
+
+  <div class="goodbye-card">
+    <h2 class="goodbye-title">Until Life Crosses Our Paths Again, Nishmitha… 💫</h2>
+    <div class="goodbye-divider"></div>
+    <p class="goodbye-text">
+      Some people may drift away with time,<br>
+      yet the memories they leave behind never truly fade.<br><br>
+      <em>Nishmitha,</em> thank you for being part of a chapter I'll always remember,<br>
+      for the laughter, the moments, and the memories<br>
+      that will always stay close in their own quiet way.<br><br>
+      <em>Belated Happy Birthday…</em><br>
+      GOODBYE NISHU<br><br>
+      💖 &nbsp; 🌸 &nbsp; ✨
+    </p>
+    <div class="goodbye-divider" style="margin-top:36px;"></div>
+    <p class="goodbye-text" style="font-size:clamp(11px,1.4vw,14px);opacity:0.45;margin-top:20px;font-style:normal;letter-spacing:0.08em;">
+      ✦ &nbsp; Crafted with love by <em style="font-style:italic;opacity:0.9;">Vivek</em> &nbsp; ✦
+    </p>
+  </div>
+</section>
+
+<script>
+/* ==========================================
+   AUDIO SYSTEM
+========================================== */
+let currentAudio = null;
+let currentAudioId = null;
+
+function playAudio(audioId, label) {
+  const audio = document.getElementById(audioId);
+  if (!audio) return;
+
+  if (currentAudio && currentAudio !== audio) {
+    fadeOut(currentAudio);
+  }
+
+  currentAudio = audio;
+  currentAudioId = audioId;
+
+  audio.volume = 0;
+  audio.play().catch(()=>{});
+
+  fadeIn(audio);
+
+  const np = document.getElementById('nowPlaying');
+  document.getElementById('nowPlayingText').textContent = '♫ ' + (label || audioId);
+  np.classList.add('visible');
+}
+
+function stopAllAudio() {
+  if (currentAudio) {
+    fadeOut(currentAudio);
+    currentAudio = null;
+    currentAudioId = null;
+  }
+  document.getElementById('nowPlaying').classList.remove('visible');
+}
+
+function fadeIn(audio, duration=800) {
+  let vol = 0;
+  const step = 0.05;
+  const interval = duration / (1/step);
+  const t = setInterval(()=>{
+    vol = Math.min(1, vol + step);
+    audio.volume = vol;
+    if (vol >= 1) clearInterval(t);
+  }, interval);
+}
+
+function fadeOut(audio, duration=600) {
+  let vol = audio.volume;
+  const step = 0.05;
+  const interval = duration / (vol/step);
+  const t = setInterval(()=>{
+    vol = Math.max(0, vol - step);
+    audio.volume = vol;
+    if (vol <= 0) { audio.pause(); clearInterval(t); }
+  }, interval);
+}
+
+/* Song mapping */
+const songMap = {
+  1: 'song1', 2: 'song1', 3: 'song1',
+  4: 'song2', 5: 'song2', 6: 'song2',
+  7: 'song3', 8: 'song3', 9: 'song3',
+  10: 'song4', 11: 'song4', 12: 'song4',
+  13: 'song5', 14: 'song5', 15: 'song5'
+};
+
+const songLabels = {
+  song1: 'Song 1', song2: 'Song 2', song3: 'Song 3',
+  song4: 'Song 4', song5: 'Song 5', tune1: 'Birthday Tune'
+};
+
+/* ==========================================
+   FREE-FLOATING CARD SYSTEM
+   Each card has its own position, velocity,
+   and bobs/drifts smoothly across the stage
+========================================== */
+
+class FloatingCard {
+  constructor(el, stageW, stageH, cardW, cardH) {
+    this.el = el;
+    this.w = cardW;
+    this.h = cardH;
+    this.stageW = stageW;
+    this.stageH = stageH;
+
+    // Random start position (inside stage)
+    this.x = Math.random() * (stageW - cardW);
+    this.y = Math.random() * (stageH - cardH);
+
+    // Random gentle velocity
+    const speed = 0.25 + Math.random() * 0.45;
+    const angle = Math.random() * Math.PI * 2;
+    this.vx = Math.cos(angle) * speed;
+    this.vy = Math.sin(angle) * speed;
+
+    // Gentle bob parameters
+    this.bobAmp = 6 + Math.random() * 10;
+    this.bobFreq = 0.0008 + Math.random() * 0.0012;
+    this.bobOffset = Math.random() * Math.PI * 2;
+
+    // Gentle tilt
+    this.tiltAmp = 1.5 + Math.random() * 2;
+    this.tiltFreq = 0.0006 + Math.random() * 0.001;
+    this.tiltOffset = Math.random() * Math.PI * 2;
+
+    this.isHovered = false;
+    this.time = Math.random() * 10000;
+
+    this.el.style.width = cardW + 'px';
+    this.el.style.height = cardH + 'px';
+    this.el.style.left = this.x + 'px';
+    this.el.style.top = this.y + 'px';
+
+    // Hover pause
+    this.el.addEventListener('mouseenter', () => { this.isHovered = true; });
+    this.el.addEventListener('mouseleave', () => { this.isHovered = false; });
+  }
+
+  update(dt) {
+    this.time += dt;
+
+    if (!this.isHovered) {
+      // Move
+      this.x += this.vx;
+      this.y += this.vy;
+
+      // Bounce off edges softly
+      if (this.x <= 0) { this.x = 0; this.vx = Math.abs(this.vx) + 0.05; }
+      if (this.x + this.w >= this.stageW) { this.x = this.stageW - this.w; this.vx = -(Math.abs(this.vx) + 0.05); }
+      if (this.y <= 0) { this.y = 0; this.vy = Math.abs(this.vy) + 0.05; }
+      if (this.y + this.h >= this.stageH) { this.y = this.stageH - this.h; this.vy = -(Math.abs(this.vy) + 0.05); }
+
+      // Clamp velocity
+      const maxSpeed = 0.8;
+      const spd = Math.hypot(this.vx, this.vy);
+      if (spd > maxSpeed) { this.vx = (this.vx/spd)*maxSpeed; this.vy = (this.vy/spd)*maxSpeed; }
+
+      // Bob + tilt
+      const bobY = Math.sin(this.time * this.bobFreq + this.bobOffset) * this.bobAmp;
+      const tilt = Math.sin(this.time * this.tiltFreq + this.tiltOffset) * this.tiltAmp;
+
+      this.el.style.transform = `translate(${this.x}px, ${this.y + bobY}px) rotate(${tilt}deg)`;
+    }
+  }
+
+  resize(stageW, stageH) {
+    this.stageW = stageW;
+    this.stageH = stageH;
+    // Keep card in bounds after resize
+    this.x = Math.min(this.x, stageW - this.w);
+    this.y = Math.min(this.y, stageH - this.h);
+  }
+}
+
+let galleryCards = [];
+let videoCards = [];
+let lastTime = 0;
+let rafId = null;
+
+function getCardSize(isMobile) {
+  if (isMobile) return { w: 130, h: 160 };
+  return { w: 175, h: 220 };
+}
+
+function getVideoSize(isMobile) {
+  if (isMobile) return { w: 220, h: 138 };
+  return { w: 300, h: 188 };
+}
+
+/* ==========================================
+   GALLERY BUILD
+========================================== */
+function buildGallery() {
+  const stage = document.getElementById('galleryStage');
+  const isMobile = window.innerWidth < 600;
+  const { w, h } = getCardSize(isMobile);
+  const stageW = window.innerWidth;
+  const stageH = window.innerHeight;
+
+  for (let i = 1; i <= 15; i++) {
+    const card = document.createElement('div');
+    card.className = 'img-card';
+    card.dataset.index = i;
+    card.style.zIndex = Math.floor(Math.random() * 10) + 5;
+
+    card.innerHTML = `
+      <img src="image${i}.jpg" alt="Memory ${i}"
+        onerror="this.parentElement.style.background='linear-gradient(135deg,#2a0a18,#1a0510)'">
+      <div class="img-card-overlay">
+        <span class="img-card-note">Memory ${i} ✦ Click to listen</span>
+      </div>
+    `;
+
+    card.addEventListener('click', () => openImage(i, card));
+    stage.appendChild(card);
+
+    const fc = new FloatingCard(card, stageW, stageH, w, h);
+    galleryCards.push(fc);
+  }
+}
+
+/* ==========================================
+   VIDEOS BUILD
+========================================== */
+function buildVideos() {
+  const stage = document.getElementById('videoStage');
+  const isMobile = window.innerWidth < 600;
+  const { w, h } = getVideoSize(isMobile);
+  const stageW = window.innerWidth;
+  const stageH = window.innerHeight;
+  const labels = ['A Beautiful Memory', 'Moments of Joy', 'Laughter & Light', 'Time Well Spent'];
+
+  for (let i = 1; i <= 4; i++) {
+    const card = document.createElement('div');
+    card.className = 'video-card';
+    card.dataset.video = i;
+    card.style.zIndex = Math.floor(Math.random() * 6) + 5;
+
+    card.innerHTML = `
+      <video src="video${i}.mp4" preload="metadata" muted loop playsinline></video>
+      <div class="video-play-overlay">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-label">${labels[i-1]}</div>
+    `;
+
+    card.addEventListener('mouseenter', () => {
+      card.querySelector('video').play().catch(()=>{});
+    });
+    card.addEventListener('mouseleave', () => {
+      card.querySelector('video').pause();
+    });
+    card.addEventListener('click', () => openVideo(i));
+
+    stage.appendChild(card);
+
+    const fc = new FloatingCard(card, stageW, stageH, w, h);
+    videoCards.push(fc);
+  }
+}
+
+/* ==========================================
+   ANIMATION LOOP
+========================================== */
+function floatLoop(ts) {
+  const dt = lastTime ? ts - lastTime : 16;
+  lastTime = ts;
+
+  if (currentPage === 2) {
+    galleryCards.forEach(c => c.update(dt));
+  }
+  if (currentPage === 3) {
+    videoCards.forEach(c => c.update(dt));
+  }
+
+  rafId = requestAnimationFrame(floatLoop);
+}
+
+requestAnimationFrame(floatLoop);
+
+// Resize handler
+window.addEventListener('resize', () => {
+  const stageW = window.innerWidth;
+  const stageH = window.innerHeight;
+  galleryCards.forEach(c => c.resize(stageW, stageH));
+  videoCards.forEach(c => c.resize(stageW, stageH));
+});
+
+function openImage(idx, card) {
+  // Stop any currently playing video lightbox
+  const player = document.getElementById('videoLightboxPlayer');
+  if (!player.paused) { player.pause(); player.src = ''; }
+  document.getElementById('videoLightbox').classList.remove('open');
+
+  // Play song
+  const songId = songMap[idx];
+  playAudio(songId, songLabels[songId]);
+
+  // Mark active
+  document.querySelectorAll('.img-card').forEach(c => c.classList.remove('active'));
+  card.classList.add('active');
+  card.style.zIndex = 60;
+
+  // Open lightbox
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  img.src = `image${idx}.jpg`;
+  lb.classList.add('open');
+
+  // Fireworks at card center
+  const rect = card.getBoundingClientRect();
+  triggerFlowerFireworks(rect.left + rect.width/2, rect.top + rect.height/2, 30);
+}
+
+function openVideo(idx) {
+  // Close image lightbox if open
+  document.getElementById('lightbox').classList.remove('open');
+  stopAllAudio();
+
+  // If another video is playing, stop it first
+  const vl = document.getElementById('videoLightbox');
+  const player = document.getElementById('videoLightboxPlayer');
+  player.pause();
+  player.src = '';
+
+  // Short delay so the browser resets cleanly
+  setTimeout(() => {
+    player.src = `video${idx}.mp4`;
+    player.play().catch(()=>{});
+    vl.classList.add('open');
+  }, 80);
+}
+
+/* ==========================================
+   LIGHTBOX CLOSE
+========================================== */
+function closeImageLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.querySelectorAll('.img-card').forEach(c => c.classList.remove('active'));
+}
+
+function closeVideoLightbox() {
+  const vl = document.getElementById('videoLightbox');
+  const player = document.getElementById('videoLightboxPlayer');
+  player.pause();
+  player.src = '';
+  vl.classList.remove('open');
+}
+
+document.getElementById('lightboxClose').addEventListener('click', closeImageLightbox);
+document.getElementById('lightboxBack').addEventListener('click', closeImageLightbox);
+
+document.getElementById('lightbox').addEventListener('click', e => {
+  if (e.target === document.getElementById('lightbox')) closeImageLightbox();
+});
+
+document.getElementById('videoLightboxClose').addEventListener('click', closeVideoLightbox);
+document.getElementById('videoLightboxBack').addEventListener('click', closeVideoLightbox);
+
+document.getElementById('videoLightbox').addEventListener('click', e => {
+  if (e.target === document.getElementById('videoLightbox')) closeVideoLightbox();
+});
+
+/* ==========================================
+   CELEBRATE
+========================================== */
+function celebrate() {
+  playAudio('tune1', 'Birthday Tune 🎂');
+
+  // Big firework burst
+  for (let i = 0; i < 8; i++) {
+    setTimeout(() => {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight * 0.7;
+      triggerFlowerFireworks(x, y, 40);
+    }, i * 200);
+  }
+
+  // Transition to page 2 after delay
+  setTimeout(() => {
+    goToPage(2);
+  }, 2200);
+}
+
+/* ==========================================
+   PAGE NAVIGATION
+========================================== */
+let currentPage = 1;
+const pageIds = ['page1','page2','page3','page4'];
+
+function goToPage(num) {
+  if (num === currentPage) return;
+
+  const overlay = document.getElementById('pageTransition');
+  overlay.classList.add('active');
+
+  setTimeout(() => {
+    // Hide all
+    pageIds.forEach(id => {
+      document.getElementById(id).style.display = 'none';
+    });
+
+    // Show target
+    document.getElementById(`page${num}`).style.display = 'flex';
+    currentPage = num;
+
+    // Update nav dots
+    document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i+1 === num);
+    });
+
+    // Stop audio when leaving gallery
+    if (num !== 2) {
+      stopAllAudio();
+    }
+
+    // If going to page 4, build stars
+    if (num === 4) buildStars();
+
+    window.scrollTo(0, 0);
+    overlay.classList.remove('active');
+  }, 500);
+}
+
+/* ==========================================
+   STAR FIELD
+========================================== */
+function buildStars() {
+  const sf = document.getElementById('starField');
+  if (sf.children.length > 0) return;
+
+  for (let i = 0; i < 120; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 3 + 1;
+    s.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random()*100}%;
+      top:${Math.random()*100}%;
+      --dur:${2 + Math.random()*4}s;
+      --del:${-Math.random()*5}s;
+      --minop:${0.05 + Math.random()*0.2};
+      --maxop:${0.4 + Math.random()*0.5};
+    `;
+    sf.appendChild(s);
+  }
+}
+
+/* ==========================================
+   PARTICLE SYSTEM (background petals)
+========================================== */
+const pCanvas = document.getElementById('particleCanvas');
+const pCtx = pCanvas.getContext('2d');
+let particles = [];
+
+function resizeCanvas() {
+  pCanvas.width = window.innerWidth;
+  pCanvas.height = window.innerHeight;
+  const fx = document.getElementById('fxCanvas');
+  fx.width = window.innerWidth;
+  fx.height = window.innerHeight;
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+class Particle {
+  constructor() { this.reset(); this.y = Math.random() * window.innerHeight; }
+  reset() {
+    this.x = Math.random() * window.innerWidth;
+    this.y = -20;
+    this.size = Math.random() * 4 + 2;
+    this.speedY = Math.random() * 0.6 + 0.3;
+    this.speedX = (Math.random() - 0.5) * 0.5;
+    this.opacity = Math.random() * 0.4 + 0.1;
+    this.rotation = Math.random() * Math.PI * 2;
+    this.rotSpeed = (Math.random() - 0.5) * 0.04;
+    this.color = ['#f4a7b9','#e8c4f0','#ffd4b8','#c9b8e8','#fce4ec'][Math.floor(Math.random()*5)];
+  }
+  update() {
+    this.y += this.speedY;
+    this.x += this.speedX + Math.sin(this.y * 0.015) * 0.3;
+    this.rotation += this.rotSpeed;
+    if (this.y > window.innerHeight + 20) this.reset();
+  }
+  draw(ctx) {
+    ctx.save();
+    ctx.globalAlpha = this.opacity;
+    ctx.translate(this.x, this.y);
+    ctx.rotate(this.rotation);
+    ctx.fillStyle = this.color;
+    // Draw petal shape
+    ctx.beginPath();
+    ctx.ellipse(0, 0, this.size, this.size * 1.7, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+}
+
+for (let i = 0; i < 60; i++) particles.push(new Particle());
+
+function animateParticles() {
+  pCtx.clearRect(0, 0, pCanvas.width, pCanvas.height);
+  particles.forEach(p => { p.update(); p.draw(pCtx); });
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+/* ==========================================
+   FLOWER FIREWORKS
+========================================== */
+const fxCanvas = document.getElementById('fxCanvas');
+const fxCtx = fxCanvas.getContext('2d');
+let fxParticles = [];
+
+class FxParticle {
+  constructor(x, y) {
+    this.x = x; this.y = y;
+    const angle = Math.random() * Math.PI * 2;
+    const speed = Math.random() * 6 + 2;
+    this.vx = Math.cos(angle) * speed;
+    this.vy = Math.sin(angle) * speed;
+    this.size = Math.random() * 8 + 3;
+    this.life = 1;
+    this.decay = Math.random() * 0.02 + 0.01;
+    this.gravity = 0.12;
+    const colors = ['#f4a7b9','#e8667a','#c9b8e8','#ffd4b8','#fff0f5','#e8c4a0','#ff9db8'];
+    this.color = colors[Math.floor(Math.random() * colors.length)];
+    this.type = Math.floor(Math.random() * 3); // 0=circle, 1=petal, 2=star
+  }
+  update() {
+    this.vy += this.gravity;
+    this.x += this.vx;
+    this.y += this.vy;
+    this.life -= this.decay;
+    this.size *= 0.98;
+  }
+  draw(ctx) {
+    ctx.save();
+    ctx.globalAlpha = Math.max(0, this.life);
+    ctx.fillStyle = this.color;
+    if (this.type === 0) {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (this.type === 1) {
+      ctx.translate(this.x, this.y);
+      ctx.rotate(this.life * 5);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, this.size, this.size * 2, 0, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      // Star
+      ctx.translate(this.x, this.y);
+      ctx.rotate(this.life * 3);
+      ctx.beginPath();
+      for (let i = 0; i < 5; i++) {
+        const a = (i * 4 * Math.PI / 5) - Math.PI / 2;
+        const r = i % 2 === 0 ? this.size : this.size * 0.4;
+        i === 0 ? ctx.moveTo(Math.cos(a)*r, Math.sin(a)*r) : ctx.lineTo(Math.cos(a)*r, Math.sin(a)*r);
+      }
+      ctx.closePath();
+      ctx.fill();
+    }
+    ctx.restore();
+  }
+}
+
+function triggerFlowerFireworks(x, y, count=25) {
+  for (let i = 0; i < count; i++) {
+    fxParticles.push(new FxParticle(x, y));
+  }
+  // Rose bloom ring
+  for (let i = 0; i < 12; i++) {
+    const fp = new FxParticle(x, y);
+    const angle = (i / 12) * Math.PI * 2;
+    fp.vx = Math.cos(angle) * (3 + Math.random() * 2);
+    fp.vy = Math.sin(angle) * (3 + Math.random() * 2);
+    fp.size = 6 + Math.random() * 4;
+    fp.color = '#f4a7b9';
+    fp.decay = 0.008;
+    fxParticles.push(fp);
+  }
+}
+
+function animateFx() {
+  fxCtx.clearRect(0, 0, fxCanvas.width, fxCanvas.height);
+  fxParticles = fxParticles.filter(p => p.life > 0);
+  fxParticles.forEach(p => { p.update(); p.draw(fxCtx); });
+  requestAnimationFrame(animateFx);
+}
+animateFx();
+
+/* ==========================================
+   INIT
+========================================== */
+buildGallery();
+buildVideos();
+
+// Ambient fireworks on page 1
+setInterval(() => {
+  if (currentPage === 1) {
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight * 0.6 + 50;
+    triggerFlowerFireworks(x, y, 8);
+  }
+}, 3500);
+
+// Page 4 periodic sparkles
+setInterval(() => {
+  if (currentPage === 4) {
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+    triggerFlowerFireworks(x, y, 6);
+  }
+}, 2500);
+
+console.log('💖 Birthday Tribute for Nishmitha loaded beautifully.');
+</script>
+</body>
+</html>
